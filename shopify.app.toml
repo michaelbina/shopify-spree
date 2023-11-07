@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "spree"
+client_id = "2a538524fcba05f0e785b3e37d4c88d3"
+application_url = "https://pontiac-allows-threats-plane.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://pontiac-allows-threats-plane.trycloudflare.com/auth/callback",
+  "https://pontiac-allows-threats-plane.trycloudflare.com/auth/shopify/callback",
+  "https://pontiac-allows-threats-plane.trycloudflare.com/api/auth/callback",
+  "https://pontiac-allows-threats-plane.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-671b1422.myshopify.com"
